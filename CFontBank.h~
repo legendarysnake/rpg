@@ -21,7 +21,7 @@ int size;
 SDL_Renderer* Surf_Display;
     CFontBank();
 
-    int OnLoad(const char* TEXT,const char* FILE, int size ,int X, int Y,int R, int G, int B);
+    int OnLoad(const char* FILE, int size,int X, int Y,int R, int G, int B);
 
     void OnCleanup();
 

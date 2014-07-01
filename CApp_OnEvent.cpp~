@@ -10,17 +10,17 @@ void CApp::OnEvent(SDL_Event* Event) {
 void CApp::OnKeyDown(SDL_Keycode sym, SDL_Keymod mod, Uint16 unicode) {
 	switch(sym) {
 		case SDLK_LEFT: {
-//if (Player.MoveUp ==false && Player.MoveDown==false && Player.MoveRight ==false ){
+if (Player.MoveUp ==false && Player.MoveDown==false && Player.MoveRight ==false ){
 Player.MoveLeft = true;
-//}
+}
 			
 			break;
 		}
 
 		case SDLK_RIGHT: {
-//			if (Player.MoveUp ==false && Player.MoveDown==false && Player.MoveLeft == false){
+			if (Player.MoveUp ==false && Player.MoveDown==false && Player.MoveLeft == false){
 Player.MoveRight = true;
-//}
+}
 			break;
 		}
 		case SDLK_UP:{

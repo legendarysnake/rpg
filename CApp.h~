@@ -40,7 +40,7 @@ SDL_Surface* loginwindow = NULL;
         CPlayer			Player;
         CPlayer			Player2;
 	CWeapon Weapon;
-CFontBank txtHP;
+//CFontBank txtHP;
     public:
         CApp();
 SDL_Window* window;

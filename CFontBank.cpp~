@@ -19,7 +19,7 @@ g= G;
 b= B;
 x=X;
 y=Y;
-size = SIZE;
+//size = SIZE;
 file=FILE;
 
 
@@ -37,7 +37,7 @@ void CFontBank::PrintText(SDL_Renderer* Surf_Display)
   //  if(Surf_Display == NULL )
   //      return;
  TTF_Font *font;
-font = TTF_OpenFont( file, size );
+font = TTF_OpenFont( file, 10 );
     SDL_Color textColor = { r, g, b };
     message = TTF_RenderText_Solid( font, text, textColor );
 
