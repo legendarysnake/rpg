@@ -61,9 +61,9 @@ bool CApp::OnInit()
 
     //SDL_EnableKeyRepeat(1, SDL_DEFAULT_REPEAT_INTERVAL / 3);
 
-    if(Player.OnLoad("./assets/onionknight.png", 32, 52, 0, Surf_Display) == false) {
+    if(Player.OnLoad("./assets/classes/pirate_f.png", 32, 48, 0, Surf_Display) == false) {
 	
-	printf("failed to Load Onion Knight"); 
+	printf("Failed to Load Character Image"); 
     	return false;
     }
 if(TTF_Init()==-1) {
