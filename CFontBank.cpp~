@@ -19,7 +19,7 @@ g= G;
 b= B;
 x=X;
 y=Y;
-//size = SIZE;
+size = SIZE;
 file=FILE;
 
 
@@ -37,12 +37,12 @@ void CFontBank::PrintText(SDL_Renderer* Surf_Display)
   //  if(Surf_Display == NULL )
   //      return;
  TTF_Font *font;
-font = TTF_OpenFont( file, 10 );
+font = TTF_OpenFont( file, size );
     SDL_Color textColor = { r, g, b };
     message = TTF_RenderText_Solid( font, text, textColor );
 
 
 SDL_Texture *t = SDL_CreateTextureFromSurface(Surf_Display,message);
-   CSurface::OnDraw(Surf_Display, t, 0, 0,0,0,150,20);
+   CSurface::OnDraw(Surf_Display, t, x, y,0,0,150,20);
 }
 

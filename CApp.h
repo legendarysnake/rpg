@@ -23,7 +23,8 @@
 #include "CWeapon.h"
 #include "CPlayer.h"
 #include "CFontBank.h"
-
+#include "CEnemy.h"
+#include "CNPC.h"
 //==============================================================================
 
 
@@ -39,8 +40,11 @@ SDL_Surface* title = NULL;
 SDL_Surface* loginwindow = NULL;
         CPlayer			Player;
         CPlayer			Player2;
+	CEnemy			Enemy;
+        CNPC			NPC;
 	CWeapon Weapon;
 CFontBank txtHP;
+CFontBank txtName;
     public:
         CApp();
 SDL_Window* window;

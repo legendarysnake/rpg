@@ -43,6 +43,6 @@ font = TTF_OpenFont( file, size );
 
 
 SDL_Texture *t = SDL_CreateTextureFromSurface(Surf_Display,message);
-   CSurface::OnDraw(Surf_Display, t, 0, 0,0,0,150,20);
+   CSurface::OnDraw(Surf_Display, t, x, y,0,0,150,30);
 }
 
