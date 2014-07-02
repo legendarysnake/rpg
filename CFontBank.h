@@ -13,6 +13,10 @@ public:
 
 static std::vector<CFontBank*>     TextList;
 public:
+SDL_Color textcolor;
+TTF_Font *font;
+SDL_Texture *t;
+SDL_Surface *message;
 int r,g,b;
 const char* text;
 const char* file;

@@ -13,6 +13,10 @@ public:
 
 static std::vector<CFontBank*>     TextList;
 public:
+SDL_Color *TextColor;
+TTF_Font *font;
+SDL_Texture *t;
+SDL_Surface *message;
 int r,g,b;
 const char* text;
 const char* file;
@@ -21,7 +25,7 @@ int size;
 SDL_Renderer* Surf_Display;
     CFontBank();
 
-    int OnLoad(const char* FILE, int size,int X, int Y,int R, int G, int B);
+    int OnLoad(const char* TEXT,const char* FILE, int size ,int X, int Y,int R, int G, int B);
 
     void OnCleanup();
 

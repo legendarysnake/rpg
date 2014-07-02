@@ -78,7 +78,7 @@ bool CApp::OnInit()
     }
 Enemy.X=100;
 Enemy.Y=100;
-NPC.X=100;
+NPC.X=200;
 NPC.Y=100;
 if(TTF_Init()==-1) {
    fprintf(stderr, "Error: unable to initialize TTF_SDL, %s\n", TTF_GetError());

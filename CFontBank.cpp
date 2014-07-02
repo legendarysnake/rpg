@@ -21,7 +21,8 @@ x=X;
 y=Y;
 size = SIZE;
 file=FILE;
-
+font = TTF_OpenFont( file, size );
+textcolor = { r, g, b };
 
 }
 
@@ -32,17 +33,8 @@ void CFontBank::OnCleanup()
 
 void CFontBank::PrintText(SDL_Renderer* Surf_Display)
 {
-    SDL_Surface *message = NULL;
-
-  //  if(Surf_Display == NULL )
-  //      return;
- TTF_Font *font;
-font = TTF_OpenFont( file, size );
-    SDL_Color textColor = { r, g, b };
-    message = TTF_RenderText_Solid( font, text, textColor );
-
-
-SDL_Texture *t = SDL_CreateTextureFromSurface(Surf_Display,message);
-   CSurface::OnDraw(Surf_Display, t, x, y,0,0,150,30);
+message = TTF_RenderText_Solid( font, text, textcolor );
+t = SDL_CreateTextureFromSurface(Surf_Display,message);
+    CSurface::OnDraw(Surf_Display, t, x, y,0,0,150,15);
 }
 
